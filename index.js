@@ -13,6 +13,9 @@ const questions = [
         type: 'input',
         name: 'title',
         message: 'title'
+    },
+    {
+        
     }
     //etc
 ];
