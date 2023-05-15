@@ -35,16 +35,21 @@ const questions = [
         message: 'Provide examples on how to run tests for this project'
     },
     {
-        type: 'input',
-        name: 'title',
-        message: 'Title'
-    },
-    {
         type: 'checkbox',
         name: 'license',
         message: 'Select a license applicable to this project',
         choices: ["MIT", "Apache License 2.0", "Boost Software License 1.0", "Eclipse Public License 2.0", "none"],
-    }
+    },
+    {
+        type: 'input',
+        name: 'questions',
+        message: 'Please enter your GitHub username'
+    },
+    {
+        type: 'input',
+        name: 'questions',
+        message: 'Please enter your email address'
+    },
 ];
 
 // TODO: Create a function to write README file
