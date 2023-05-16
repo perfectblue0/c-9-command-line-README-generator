@@ -60,14 +60,14 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    
+    return fs.writeFile(path.join(process.cwd(), fileName), data);
 }
     
 // TODO: Create a function to initialize app
 function init() {}
     inquirer.prompt(questions).then(function(answers) {
         const markdownText = generateMarkdown(answers);
-        writeToFile("whateveevs", markdownText);
+        writeToFile("", markdownText);
     })
 // Function call to initialize app
 init();
