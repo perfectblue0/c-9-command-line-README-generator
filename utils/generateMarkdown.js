@@ -21,7 +21,7 @@ function renderLicenseSection(license) {
   if (license !== "none") {
     return `## License
     
-        Licensed under the ${license} license.`;
+        Licensed covered under the ${license} license.`;
   }
   // If there is no license, return an empty string
   return "";
@@ -30,7 +30,14 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-
+${renderLicenseBadge(data.license)}
+## Table of Contents
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 ## License
 ${renderLicenseSection(data.license)}
 `;
