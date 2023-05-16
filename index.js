@@ -13,48 +13,57 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'Title'
+        message: 'Title',
+        validate: (res)=>{if(res){return true} else {return "please enter response to continue"}}
     },
     {
         type: 'input',
         name: 'description',
-        message: 'Describe the what, why, and how of this project'
+        message: 'Describe the what, why, and how of this project',
+        validate: (res)=>{if(res){return true} else {return "please enter response to continue"}}
     },
     {
         type: 'input',
         name: 'installation',
-        message: 'Explain the steps required to install the project'
+        message: 'Explain the steps required to install the project',
+        validate: (res)=>{if(res){return true} else {return "please enter response to continue"}}
     },
     {
         type: 'input',
         name: 'usage',
-        message: 'Provide instructions and examples for use'
+        message: 'Provide instructions and examples for use',
+        validate: (res)=>{if(res){return true} else {return "please enter response to continue"}}
     },
     {
         type: 'input',
         name: 'contributing',
-        message: 'Share the guidelines for how to contribute to this project'
+        message: 'Share the guidelines for how to contribute to this project',
+        validate: (res)=>{if(res){return true} else {return "please enter response to continue"}}
     },
     {
         type: 'input',
         name: 'tests',
-        message: 'Provide examples on how to run tests for this project'
+        message: 'Provide examples on how to run tests for this project',
+        validate: (res)=>{if(res){return true} else {return "please enter response to continue"}}
     },
     {
         type: 'checkbox',
         name: 'license',
         message: 'Select a license applicable to this project',
         choices: ["MIT", "Apache License 2.0", "Boost Software License 1.0", "Eclipse Public License 2.0", "none"],
+        validate: (res)=>{if(res){return true} else {return "please pick response to continue"}}
     },
     {
         type: 'input',
         name: 'username',
-        message: 'Please enter your GitHub username'
+        message: 'Please enter your GitHub username',
+        validate: (res)=>{if(res){return true} else {return "please enter response to continue"}}
     },
     {
         type: 'input',
         name: 'email',
-        message: 'Please enter your email address'
+        message: 'Please enter your email address',
+        validate: (res)=>{if(res){return true} else {return "please enter response to continue"}}
     },
 ];
 
