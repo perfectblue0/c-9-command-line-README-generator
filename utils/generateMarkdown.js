@@ -38,6 +38,22 @@ ${renderLicenseBadge(data.license)}
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
+${renderLicenseLink(data.license)}
+## Description
+${data.description}
+## Installation
+${data.installation}
+## Usage
+${data.usage}
+## Contributing
+${data.contributing}
+## Tests
+${data.tests}
+## Questions
+Click on my GitHub username to visit my profile:
+* [${data.username}](https://github.com/${data.username}/)
+If you have more questions please email me:
+* ${data.email}
 ## License
 ${renderLicenseSection(data.license)}
 `;
