@@ -48,12 +48,12 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'questions',
+        name: 'username',
         message: 'Please enter your GitHub username'
     },
     {
         type: 'input',
-        name: 'questions',
+        name: 'email',
         message: 'Please enter your email address'
     },
 ];
@@ -65,9 +65,8 @@ function writeToFile(fileName, data) {
     
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions).then(function(answers) {
-        const markdownText = generateMarkdown(answers);
-        writeToFile("./dist/README.md", markdownText);
+    inquirer.prompt(questions).then((answers)=> {
+        writeToFile("./dist/README.md", generateMarkdown({ ...answers}));
     });
 }
 
