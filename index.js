@@ -1,6 +1,12 @@
-// TODO: Include packages needed for this application(download npm inquirer)
-
+// packages needed for this application
 const inquirer = require("inquirer");
+const fs = require("fs");
+
+// takes questions array responses and puts them in generateMarkdown file in utils folder
+const path = require("path");
+
+// gets data in generateMarkdown file and brings to this file
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -53,13 +59,15 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-    // todo: ad fs code to save file
+function writeToFile(fileName, data) {
+    
+}
+    
 // TODO: Create a function to initialize app
 function init() {}
     inquirer.prompt(questions).then(function(answers) {
         const markdownText = generateMarkdown(answers);
-        writeToFile('whaeeeves', markdownText);
+        writeToFile("whateveevs", markdownText);
     })
 // Function call to initialize app
 init();
