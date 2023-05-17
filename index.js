@@ -50,7 +50,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Select a license applicable to this project',
-        choices: ["MIT", "Apache License 2.0", "Boost Software License 1.0", "Eclipse Public License 2.0", "none"],
+        choices: ["MIT", "Apache2.0", "Boost1.0", "Mozilla2.0", "none"],
         validate: (res)=>{if(res){return true} else {return "please pick response to continue"}}
     },
     {
