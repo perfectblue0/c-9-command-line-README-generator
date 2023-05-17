@@ -20,7 +20,7 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license section of README
 function renderLicenseSection(license) {
   if (license !== "none") {
-    return `Licensed covered under the ${license} license.`;
+    return `Application covered under the ${license} license.`;
   }
   // If there is no license, return an empty string
   return "";
@@ -30,6 +30,8 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 ${renderLicenseBadge(data.license)}
+## Description
+${data.description}
 ## Table of Contents
 * [Description](#description)
 * [Installation](#installation)
@@ -38,8 +40,6 @@ ${renderLicenseBadge(data.license)}
 * [Tests](#tests)
 * [Questions](#questions)
 * [License](#license)
-## Description
-${data.description}
 ## Installation
 ${data.installation}
 ## Usage
