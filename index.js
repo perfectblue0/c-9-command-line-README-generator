@@ -47,7 +47,7 @@ const questions = [
         validate: (res)=>{if(res){return true} else {return "please enter response to continue"}}
     },
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'license',
         message: 'Select a license applicable to this project',
         choices: ["MIT", "Apache License 2.0", "Boost Software License 1.0", "Eclipse Public License 2.0", "none"],
