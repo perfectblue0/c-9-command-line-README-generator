@@ -28,7 +28,8 @@ To answer the question about which license the user wants, use the up and down a
 !['new README in dist'](./images/shot-4.png)  
 Click on the folder "dist" then on the newly generated "README.md" to view the new file.
 !['README file'](./images/shot-6.png)  
-To see a preview of the new file click on the "Open Preview to the Side" button, as highlighted in the above picture (it's on the right side and looks like an open book with a magnifying glass).
+To see a preview of the new file click on the "Open Preview to the Side" button, as highlighted in the above picture (it's on the right side and looks like an open book with a magnifying glass).  
+
 !['README preview'](./images/shot-8.png)
 
 
