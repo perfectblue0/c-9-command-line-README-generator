@@ -1,27 +1,26 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 function renderLicenseBadge(license) {
   if (license !== "none") {
-    return `![Github license](https://img.shields.io/badge/license-${license}-yellowgreen.svg)`
+    return `![Github license](https://img.shields.io/badge/license-${license}-yellowgreen.svg)`;
   }
   // If there is no license, return an empty string
   return "";
 }
 
 // TODO: Create a function that returns the license link
-function renderLicenseLink(license) {
+/*function renderLicenseLink(license) {
   if (license !== "none") {
     return `\n[License](#license)\n`
   }
   // If there is no license, return an empty string
   return "";
 }
+*/
 
 // TODO: Create a function that returns the license section of README
 function renderLicenseSection(license) {
   if (license !== "none") {
-    return `## License
-    
-        Licensed covered under the ${license} license.`;
+    return `Licensed covered under the ${license} license.`;
   }
   // If there is no license, return an empty string
   return "";
@@ -38,7 +37,7 @@ ${renderLicenseBadge(data.license)}
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
-${renderLicenseLink(data.license)}
+* [License](#license)
 ## Description
 ${data.description}
 ## Installation
