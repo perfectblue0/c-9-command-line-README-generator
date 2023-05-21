@@ -10,10 +10,10 @@ I created this project to practice using the command-line, node.js, and the Inqu
 - [License](#license)
 
 ## Installation
-To use the application clone the repo to a folder or save it to your desktop. Use the command line to travel to the project. Open the project on Visual Studio Code by entering “code .” You will then see the folders and files of the project.
+To use the application clone the repo to a folder or save it to your desktop. Use the command line to travel to the project. Open the project on Visual Studio Code by entering “code .” You will then see the folders and files of the project. Next type in "npm i" on the command-line and press enter to download Inquirer 8.2.4. Now you are ready to start generating files!
 
 ## Usage
-For a preview of the basic functionality of this application, visit this link.
+For a video preview of the basic functionality of this application, visit this link.
 https://drive.google.com/file/d/1TeB8wxbDObrj7rTuuJVydEvfA126bHwe/view  
 ### My Repo
 https://github.com/perfectblue0/c-9-command-line-README-generator  
